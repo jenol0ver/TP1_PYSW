@@ -153,3 +153,92 @@ body {
   .btn:hover {
     background-color: #2D1E3F;
   }
+
+   /* CLASES DESTACADAS */
+   .clases-destacadas {
+    padding: 80px 40px;
+    background-color: #fff;
+  }
+
+  .clases-destacadas h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #4C3273;
+    margin-bottom: 40px;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    color: #4C3273;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .card-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background: #4C3273;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .card button:hover {
+    background-color: #7E4AA5;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(126, 74, 165, 0.3);
+  }
+
+  .card button:active {
+    transform: translateY(0);
+  }
