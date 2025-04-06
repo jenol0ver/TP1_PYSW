@@ -242,3 +242,67 @@ body {
   .card button:active {
     transform: translateY(0);
   }
+
+  /* ESTADÍSTICAS */
+  .estadisticas {
+    padding: 80px 40px;
+    background: #F7F1F4;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .contador {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .numero {
+    font-size: 48px;
+    font-weight: 800;
+    color: #4C3273;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .etiqueta {
+    font-size: 16px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Animación */
+  @keyframes count {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .contador {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: count 1s ease forwards;
+  }
+
+  .contador:nth-child(1) { animation-delay: 0.3s; }
+  .contador:nth-child(2) { animation-delay: 0.6s; }
+  .contador:nth-child(3) { animation-delay: 0.9s; }
+  .contador:nth-child(4) { animation-delay: 1.2s; }
+
+  /* Efecto de desplazamiento suave */
+  .numero {
+    transition: all 0.3s ease;
+  }
+
+  .numero:hover {
+    transform: translateY(-5px);
+    color: #7E4AA5;
+  }
